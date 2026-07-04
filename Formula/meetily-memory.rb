@@ -1,22 +1,24 @@
 class MeetilyMemory < Formula
   desc "Local-first Meetily history index and CLI"
   homepage "https://github.com/0x12th/meetily-memory"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.0/meetily-memory-v0.2.0-macos-arm64.tar.gz"
-      sha256 "8d67f6a57ab3ed0bebc6c297ad02cc687be2dd569dc4684690a3d251fc6eae1c"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.1/meetily-memory-v0.2.1-macos-arm64.tar.gz"
+      sha256 "4c4d6be8cd6c6eb55222e155fe5cc70369a37fae4a1f539edaaa021ec156f31f"
     elsif Hardware::CPU.intel?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.0/meetily-memory-v0.2.0-macos-x86_64.tar.gz"
-      sha256 "3a2d690b20db88ed62603e9fc863abab6e56f7c6dc8fa354a8d6f6166e0c4d2a"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.1/meetily-memory-v0.2.1-macos-x86_64.tar.gz"
+      sha256 "eab11b649bff9258c60bb94d8ef1721a4ec8f1eae3edba5caa3e843457fd679d"
     end
   end
 
   def install
-    bin.install "mm"
-    bin.install_symlink "mm" => "meetily-memory"
+    libexec.install Dir["*"]
+
+    bin.install_symlink libexec/"mm" => "mm"
+    bin.install_symlink libexec/"mm" => "meetily-memory"
   end
 
   test do
