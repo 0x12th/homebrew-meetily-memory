@@ -2,7 +2,7 @@ class MeetilyMemory < Formula
   desc "Local-first Meetily history index and CLI"
   homepage "https://github.com/0x12th/meetily-memory"
   version "0.2.0"
-  license :cannot_represent
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
