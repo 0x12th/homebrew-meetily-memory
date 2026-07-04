@@ -1,16 +1,16 @@
 class MeetilyMemory < Formula
   desc "Local-first Meetily history index and CLI"
   homepage "https://github.com/0x12th/meetily-memory"
-  version "0.1.0"
+  version "0.2.0"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.1.0/meetily-memory-v0.1.0-macos-arm64.tar.gz"
-      sha256 "3ba6252add257c708dd7f1b6598dfbb17bab9771b7a6fc9f40c2822b34cf4865"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.0/meetily-memory-v0.2.0-macos-arm64.tar.gz"
+      sha256 "8d67f6a57ab3ed0bebc6c297ad02cc687be2dd569dc4684690a3d251fc6eae1c"
     elsif Hardware::CPU.intel?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.1.0/meetily-memory-v0.1.0-macos-x86_64.tar.gz"
-      sha256 "1118c3b6b5ec59111c2b3e7b21a8d3bfa20c3f951f8104c1a279835854fa4c7d"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.2.0/meetily-memory-v0.2.0-macos-x86_64.tar.gz"
+      sha256 "3a2d690b20db88ed62603e9fc863abab6e56f7c6dc8fa354a8d6f6166e0c4d2a"
     end
   end
 
