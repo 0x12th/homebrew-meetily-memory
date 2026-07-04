@@ -1,6 +1,7 @@
 class MeetilyMemory < Formula
   desc "Local-first Meetily history index and CLI"
   homepage "https://github.com/0x12th/meetily-memory"
+  version "0.1.0"
   license :cannot_represent
 
   on_macos do
