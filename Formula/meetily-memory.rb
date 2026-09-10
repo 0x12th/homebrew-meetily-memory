@@ -5,11 +5,11 @@ class MeetilyMemory < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.8.0/meetily-memory-v0.8.0-macos-arm64.tar.gz"
-      sha256 "87d3f3301bc0ca1167ec82c662c663c0d97f5de23706f4317eec3593d4e43c9a"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.8.6/meetily-memory-v0.8.6-macos-arm64.tar.gz"
+      sha256 "526e2960d38c2b2e2bb4b335d75d73c50dc387562e2686fb6d6b7789ba4d7273"
     elsif Hardware::CPU.intel?
-      url "https://github.com/0x12th/meetily-memory/releases/download/v0.8.0/meetily-memory-v0.8.0-macos-x86_64.tar.gz"
-      sha256 "14603ec93c3f4ddb5ee327099534c0838924b1a0156bfb28efaf6212439242fb"
+      url "https://github.com/0x12th/meetily-memory/releases/download/v0.8.6/meetily-memory-v0.8.6-macos-x86_64.tar.gz"
+      sha256 "c32b0702dbe8aad977fc16dba17e3fb97d4c8e4095dff10bc640db36495e8301"
     end
   end
 
